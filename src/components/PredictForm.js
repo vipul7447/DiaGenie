@@ -51,7 +51,7 @@ export default function PredictForm() {
       return (
         <>
           <p className="text-green-500 font-bold mt-2">
-            ✅ Great! You're not diabetic.
+            ✅ Great! You&#39;re not diabetic.
           </p>
           <ul className="mt-2 text-sm list-disc list-inside text-green-300">
             <li>Maintain a balanced diet</li>
