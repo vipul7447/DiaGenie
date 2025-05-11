@@ -9,7 +9,7 @@ app = FastAPI()
 # ✅ CORS SETTINGS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3002"],
+    allow_origins=["https://areyoudiabetes.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
