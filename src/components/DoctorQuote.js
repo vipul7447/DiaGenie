@@ -1,8 +1,9 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const quotes = [
-  "Diabetes is not a death sentence. It’s a manageable condition.",
+  "Diabetes is not a death sentence. It's a manageable condition.",
   "Eat well, stay active, and monitor your sugar daily.",
   "A small step toward health is a big step against diabetes.",
   "Healthy habits are the best medicine.",
@@ -27,7 +28,7 @@ export default function DoctorQuote() {
 
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <img src="/doctor.webp" alt="Doctor" className="w-64 mb-6" />
+      <Image src="/doctor.webp" alt="Doctor" width={500} height={300} />
       <p className={`italic max-w-sm transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
         “{quote}”
       </p>
